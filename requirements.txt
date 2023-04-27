@@ -1,0 +1,6 @@
+cryptography
+pymongo
+python-nmap
+python-dotenv
+pyshark
+psutil

@@ -1,5 +1,7 @@
 # How to Run SpyOT application
 
-'''sh
-python -r requriments.txt
-'''
+## Project Setup
+
+```sh
+python -r requirements.txt
+```

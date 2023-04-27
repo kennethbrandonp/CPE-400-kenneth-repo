@@ -1,3 +1,5 @@
 # How to Run SpyOT application
 
-==ayo==
+'''sh
+python -r requriments.txt
+'''

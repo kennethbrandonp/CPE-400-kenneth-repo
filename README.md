@@ -5,7 +5,7 @@
 First you want the libraries we'll be using so plug this command into ther terminal:
 
 ```sh
-python -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Afterwards, hit "run" in the IDE while main.py is open. That should run the application.

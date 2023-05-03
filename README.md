@@ -25,5 +25,5 @@ If you continue to have problems with these libraries, make sure their path's ar
 ```
 Beyond this, there is no other troubleshooting that needs to be done. The application should run. If it does not, refer to the CPE 400 Project Report on Details and results for an example of it running:
 ```sh
-Project report: https://docs.google.com/document/d/1khIZ1bJKohxXY2bAndTMmbEtwAzdih82Pmici_VJiCg/edit?usp=sharing# 
+Project report: https://docs.google.com/document/d/1khIZ1bJKohxXY2bAndTMmbEtwAzdih82Pmici_VJiCg/edit?usp=sharing
 ```

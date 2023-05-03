@@ -6,9 +6,9 @@ pip install -r requirements.txt
 ```
 In the folder labeled "main" is the packaged form of SpyOT. The executable 'main.exe' should be able to run after pip installing the requirements.
 
-*If for some reason the executable package doesn't work:
+***If for some reason the executable package doesn't work:***
 
-In the repo, open main.py in your IDE and in the upper right corner hit "run" main.py is open. That should run the application.
+In the repo, open main.py in your IDE and in the upper right corner hit "run" while main.py is open. That should run the application.
 
 ## Path Handling
 Make sure you have both Wireshark and Nmap downloaded:

@@ -1,28 +1,107 @@
-# Constants
-default_width, default_height = 800, 600
-default_res = default_width, default_height
-default_geometry = str(default_width) + 'x' + str(default_height)
-default_text_size = 18
-default_font = "Helvetica"
-padding = (3, 3, 12, 12)
-asset_path = "SpyOT\\gui\\assets\\"
-logo_img = asset_path + "logo.png"
-profile_path = asset_path + "profile_icon.png"
-setting_path = asset_path + "settings_icon.png"
-title_path = asset_path + "title_icon.png"
-info_path = asset_path + "info_icon.png"
-scan_path = asset_path + "scan_icon.png"
-collect_path = asset_path + "collect_icon.png"
-upload_path = asset_path + "transfer_icon.png"
-exit_path = asset_path + "exit_icon.png"
-scan_button = asset_path + "scan_button.png"
-collect_button = asset_path + "collect_button.png"
-upload_button = asset_path + "upload_button.png"
-expand_button = asset_path + "expand_output.png"
-collapse_button = asset_path + "collapse_output.png"
-light_mode = asset_path + "light_mode.png" #<<Settings 
-dark_mode = asset_path + "dark_mode.png"
-about_text = """
+from os import getcwd
+from os.path import join
+
+""" GUI CONSTANTS """
+FRAME_MIN_WIDTH = 275
+FRAME_MIN_HEIGHT = 200
+
+""" THEME CONSTANTS """
+
+BUTTON_STYLE = "ttk.Button.CustomButton.TButton"
+IMG_BUTTON_STYLE = "ttk.Button.ImgCustomButton.TButton"
+MAIN_BUTTON_STYLE = "ttk.Button.MainButton.TButton"
+LABEL_STYLE = "ttk.Label.CustomLabel.TLabel"
+
+EGGSHELL_WHITE = "#F0EAD6"
+LIGHT_GRAY = "#ADADAD"
+DARK_GRAY = "#5C5C5C"
+ASH_GRAY = "#B2BEB5"
+SILVER = "#C0C0C0"
+SMOKE = "#E0E0E0"
+DARK_BG_PRIMARY = "#1E313B"
+LIGHT_BG_PRIMARY = SILVER
+LIGHT_BG_SECONDARY = "white"
+
+BLACKLIST_PRIMARY = DARK_BG_PRIMARY
+BLACKLIST_SECONDARY = LIGHT_BG_PRIMARY
+
+WHITELIST_PRIMARY = LIGHT_BG_PRIMARY
+WHITELIST_SECONDARY = DARK_BG_PRIMARY
+
+WIN_BG = DARK_BG_PRIMARY
+
+FRAME_DARK_PRIMARY = DARK_BG_PRIMARY
+FRAME_LIGHT_PRIMARY = LIGHT_BG_PRIMARY
+FRAME_DARK_SECONDARY = DARK_BG_PRIMARY
+FRAME_LIGHT_SECONDARY = LIGHT_BG_PRIMARY
+
+IMG_BUTTON_LIGHT_PRIMARY = LIGHT_BG_PRIMARY
+IMG_BUTTON_LIGHT_SECONDARY = DARK_BG_PRIMARY
+IMG_BUTTON_DARK_PRIMARY = DARK_BG_PRIMARY
+IMG_BUTTON_DARK_SECONDARY = LIGHT_BG_SECONDARY
+
+BUTTON_LIGHT_PRIMARY = LIGHT_BG_PRIMARY
+BUTTON_LIGHT_SECONDARY = LIGHT_BG_SECONDARY
+BUTTON_DARK_PRIMARY = DARK_BG_PRIMARY
+BUTTON_DARK_SECONDARY = LIGHT_BG_SECONDARY
+
+MAIN_BTTN_LIGHT_PRIMARY = SILVER
+MAIN_BTTN_DARK_PRIMARY = DARK_BG_PRIMARY
+
+LABEL_LIGHT_PRIMARY = LIGHT_BG_PRIMARY
+LABEL_LIGHT_SECONDARY = DARK_BG_PRIMARY
+LABEL_DARK_PRIMARY = DARK_BG_PRIMARY
+LABEL_DARK_SECONDARY = LIGHT_BG_SECONDARY
+
+""" ASSET PATH CONSTANTS"""
+CWD = getcwd()
+ASSETS_PATH = join(CWD, "assets")
+
+""" MainView ASSETS"""
+LOGO_PATH = join(ASSETS_PATH, "logo.png")
+PROFILE_PATH = join(ASSETS_PATH, "profile_icon.png")
+SETTINGS_PATH = join(ASSETS_PATH, "settings_icon.png")
+TITLE_PATH = join(ASSETS_PATH, "title_icon.png")
+TITLE_DARK_PATH = join(ASSETS_PATH, "title_dark_icon.png")
+INFO_ICON_PATH = join(ASSETS_PATH, "info_icon.png")
+SCAN_ICON_PATH = join(ASSETS_PATH, "scan_icon.png")
+COLLECT_ICON_PATH = join(ASSETS_PATH, "collect_icon.png")
+UPLOAD_ICON_PATH = join(ASSETS_PATH, "upload_icon.png")
+SCAN_BUTTON_PATH = join(ASSETS_PATH, "scan_button.png")
+COLLECT_BUTTON_PATH = join(ASSETS_PATH, "collect_button.png")
+UPLOAD_BUTTON_PATH = join(ASSETS_PATH, "upload_button.png")
+EXPAND_OUTPUT_ICON_PATH = join(ASSETS_PATH, "expand_output.png")
+COLLAPSE_OUTPUT_ICON_PATH = join(ASSETS_PATH, "collapse_output.png")
+EXIT_ICON_PATH = join(ASSETS_PATH, "exit_icon.png")
+
+""" Settings ASSETS """
+LIGHT_MODE_ICON = join(ASSETS_PATH, "light_mode.png")
+DARK_MODE_ICON = join(ASSETS_PATH, "dark_mode.png")
+
+""" Output ASSETS """
+BLACKLIST_ICON_PATH = join(ASSETS_PATH, "blacklist_icon.png")
+WHITELIST_ICON_PATH = join(ASSETS_PATH, "whitelist_icon.png")
+CANCEL_ICON_PATH = join(ASSETS_PATH, "cancel_icon.png")
+EDIT_LIST_ICON_PATH = join(ASSETS_PATH, "edit_list_icon.png")
+LOGIN_ICON_PATH = join(ASSETS_PATH, "login_icon.png")
+LOGOUT_ICON_PATH = join(ASSETS_PATH, "logout_icon.png")
+NEW_SCAN_ICON_PATH = join(ASSETS_PATH, "new_scan_icon.png")
+SAVE_REPORT_ICON_PATH = join(ASSETS_PATH, "save_report_icon.png")
+VIEW_REPORT_ICON_PATH = join(ASSETS_PATH, "view_report_icon.png")
+LOADING_ICON_PATH = join(ASSETS_PATH, "loading_icon.png")
+LOADING_DARK_ICON_PATH = join(ASSETS_PATH, "loading_dark_icon.png")
+EMAIL_LABEL = join(ASSETS_PATH, "email_label.png")
+PASSWORD_LABEL = join(ASSETS_PATH, "password_label.png")
+EMAIL_DARK_LABEL = join(ASSETS_PATH, "email_dark_label.png")
+PASSWORD_DARK_LABEL = join(ASSETS_PATH, "password_dark_label.png")
+LOGIN_PROMPT = join(ASSETS_PATH, "login_prompt.png")
+LOGIN_DARK_PROMPT = join(ASSETS_PATH, "login_dark_prompt.png")
+SCAN_LABEL = join(ASSETS_PATH, "scan_label.png")
+SCAN_DARK_LABEL = join(ASSETS_PATH, "scan_dark_label.png")
+
+""" MISC. CONSTANTS """
+
+ABOUT_TEXT = """
         Instructions -
         scan systems: Performs a light weight scan on your 
         systems with the help of the Nmap library. Once complete,
@@ -42,3 +121,10 @@ about_text = """
         complete, a message will appear stating whether your data
         was successfully uploaded or not.
         """
+
+default_width, default_height = 800, 600
+default_res = default_width, default_height
+default_geometry = str(default_width) + 'x' + str(default_height)
+default_text_size = 18
+default_font = "Helvetica"
+padding = (3, 3, 12, 12)

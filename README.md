@@ -1,39 +1,11 @@
-# How to Run SpyOT application
+# SpyOT: Project Description
 
-## Project Setup
+This repository is for the purpose of housing progress made among team members. The project itself is about identifying vulnerabilities in a network of local IoT devices.
 
-First you want the libraries we'll be using so plug this command into ther terminal:
+P2-T19 project Description:
 
-```sh
-pip install -r requirements.txt
-```
+For this senior project, we attempt to tackle the beginning of a cybersecurity problem that user networks face when having a vast IoT environment that malicious software can manipulate and take advantage of by informing the user of the threats that are associated with the vulnerabilities of their network. In order to inform the user, first we need to identify connected IoT devices that are on a user’s network. Once those devices are detected and the data is compiled into a list or graph, there needs to be a simple and easy to understand way of displaying that information of the detected devices to the user so that the user can understand which devices are at risk of malicious software. As the user is informed of their at-risk devices, then the user can begin the steps towards improving their network security in order to prevent malicious software from attaching themselves to their network of IoT devices.
 
-Afterwards, hit "run" in the IDE while main.py is open. That should run the application.
+Our project’s mission towards network security is to improve a user’s network. To improve the user’s network, a layer of security can be provided by supplying the user readable knowledge of their network’s vulnerabilities towards bad-agents that use malware and malicious software to access that user’s network. If that user is able to see their network, understand and utilize what information they have then the project has successfully completed its mission.
 
-## Path Handling
-
-Make sure you have both Wireshark and Nmap downloaded:
-
-```sh
-Wireshark download: https://www.wireshark.org/download.html
-```
-
-
-```sh
-Nmap download: https://nmap.org/download
-```
-
-If you continue to have problems with these libraries, make sure their path's are set in the environment variables on your local computer:
-
-```sh
-  Go to your start menu and type: "Edit environment variables for your account"
-  Go to: Path -> Edit -> Browse -> Program(x86) 
-  Choose folders for either Wireshark or Nmap (Depending on which one you're setting the path for)
-  Click "OK" until you're closed out of all "Edit environment variables for your account" windows.
- ```
-
-Beyond this, there is no other troubleshooting that needs to be done. The application should run. If it does not, refer to the CPE 400 Project Report on Details and results for an example of it running:
-
-```sh
-Project report: https://docs.google.com/document/d/1khIZ1bJKohxXY2bAndTMmbEtwAzdih82Pmici_VJiCg/edit?usp=sharing
-```
+With the amount of IoT environments that are available to the non-technical public comes the great need for security and a way to monitor that environment. Our project will provide that peace of mind that users with non-technical knowledge will likely desire without taking a more expensive route for security measures on just detecting vulnerabilities and threats.

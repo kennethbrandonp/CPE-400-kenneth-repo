@@ -27,3 +27,5 @@ Beyond this, there is no other troubleshooting that needs to be done. The applic
 ```sh
 Project report: https://docs.google.com/document/d/1khIZ1bJKohxXY2bAndTMmbEtwAzdih82Pmici_VJiCg/edit?usp=sharing
 ```
+
+***All backend scripts can be independently tested in the folder "systems"***
